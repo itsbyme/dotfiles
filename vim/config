@@ -1,3 +1,42 @@
+" Section for installing vim-plug
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" >>>Section for plugins<<<
+call plug#begin()
+
+Plug 'scrooloose/nerdtree'
+
+Plug 'vim-airline/vim-airline'
+
+Plug 'valloric/youcompleteme'
+
+Plug 'ErichDonGubler/vim-sublime-monokai'
+
+call plug#end()
+" <<<Section for plugins>>>
+
+" >>Section for plugins settings<<<
+    " >>>Section for NERDTree settings<<<
+        autocmd vimenter * NERDTree
+    " <<<Section for NERDTree settings>>>
+    
+    " >>>Section for airline settings<<<
+        let g:airline_theme='dark'
+        
+        let g:airline_powerline_fonts = 1
+
+        let g:Powerline_symbols='unicode'
+    " <<<Section for airline settings>>>
+" <<<Section for plugins settings>>>
+
+filetype plugin indent on
+
+set encoding=utf-8
+set nocompatible
+
 set tabstop=4
 set shiftwidth=4
 set smarttab
@@ -5,5 +44,5 @@ set et
 set wrap
 
 syntax on
-colorscheme desert
+colorscheme sublimemonokai
 set number
