@@ -1,0 +1,49 @@
+Xterm*termName:             xterm-256color
+XTerm*background:           #000000
+XTerm*foreground:           #ffffff
+XTerm*cursorColor:          #ff0000
+XTerm*VT100.geometry:       80x24
+XTerm*faceName:             DejaVu Sans Mono
+XTerm*faceSize:             10
+XTerm*dynamicColors:        true
+XTerm*utf8:                 true
+XTerm*eightBitInput:        true
+XTerm*saveLines:            512
+XTerm*scrollKey:            true
+XTerm*scrollTtyOutput:      false
+XTerm*scrollBar:            false
+XTerm*jumpScroll:           true
+XTerm*multiScroll:          true
+XTerm*toolBar:              false
+XTerm.vt100.locale:         true
+XTerm.vt100.translations:   #override \n\
+    Shift Ctrl <Key>C: copy-selection(Clipboard) \n\
+    Shift Ctrl <Key>V: insert-selection(Clipboard) \n\
+    Ctrl <Key>C: string(0x03) \n\
+    Ctrl <Key>V: string(0x16) \n\
+
+
+UXTerm*termName:            xterm-256color
+UXTerm*background:          #000000
+UXTerm*foreground:          #ffffff
+UXTerm*cursorColor:         #ffffff
+UXTerm*VT100.geometry:      80x24
+UXTerm*faceName:            source code pro
+UXTerm*faceSize:            10
+UXTerm*dynamicColors:       true
+UXTerm*utf8:                true
+UXTerm*eightBitInput:       true
+UXTerm*saveLines:           512
+UXTerm*scrollKey:           true
+UXTerm*scrollTtyOutput:     false
+UXTerm*scrollBar:           false
+UXTerm*jumpScroll:          true
+UXTerm*multiScroll:         true
+UXTerm*toolBar:             false
+UXTerm.vt100.locale:         true
+UXTerm.vt100.translations:  #override \n\
+    Shift Ctrl <Key>C: copy-selection(clipboard) \n\
+    Shift Ctrl <Key>V: insert-selection(clipboard) \n\
+    Ctrl <Key>C: string(0x03) \n\
+    Ctrl <Key>V: string(0x16) \n\
+
