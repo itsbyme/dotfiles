@@ -3,7 +3,7 @@ XTerm*background:           #000000
 XTerm*foreground:           #ffffff
 XTerm*cursorColor:          #ff0000
 XTerm*VT100.geometry:       80x24
-XTerm*faceName:             DejaVu Sans Mono
+XTerm*faceName:             source code pro 
 XTerm*faceSize:             10
 XTerm*dynamicColors:        true
 XTerm*utf8:                 true
@@ -17,8 +17,8 @@ XTerm*multiScroll:          true
 XTerm*toolBar:              false
 XTerm.vt100.locale:         true
 XTerm.vt100.translations:   #override \n\
-    Shift Ctrl <Key>C: copy-selection(Clipboard) \n\
-    Shift Ctrl <Key>V: insert-selection(Clipboard) \n\
+    Shift Ctrl <Key>C: copy-selection(clipboard) \n\
+    Shift Ctrl <Key>V: insert-selection(clipboard) \n\
     Ctrl <Key>C: string(0x03) \n\
     Ctrl <Key>V: string(0x16) \n\
 
