@@ -2,7 +2,6 @@
 " |                         Plugins                             |
 " +-------------------------------------------------------------+
 
-" if vim-plug is not installed install it
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
@@ -24,8 +23,7 @@ call plug#end()
 " +--------------------------------+
 " |            NERDTree            |
 " +--------------------------------+
-
-autocmd vimenter * NERDTree 
+autocmd vimenter * NERDTree
 
 " +--------------------------------+
 " |            airline             |
@@ -35,7 +33,7 @@ let g:airline_theme='powerlineish'
 
 let g:airline_powerline_fonts = 1 
 let g:airline_section_z = "%l/%L \ue0a1 :%c" 
-let g:Powerline_symbols='unicode' 
+let g:Powerline_symbols='unicode'
 
 " +--------------------------------+
 " |        youcompleteme           |
@@ -45,45 +43,28 @@ let g:Powerline_symbols='unicode'
 " +-------------------------------------------------------------+
 " |                     Basic settings                          |
 " +-------------------------------------------------------------+
-
-" auto indent filetype 
+ 
 filetype plugin indent on
 
-" use utf-8 encoding
 set encoding=utf-8
 
-" disable compatible with vi
 set nocompatible
 
-" enable syntax highlighting
 syntax on
 
-" enable numering lines
 set number
 
-" use Sublime cool colorscheme
-" NOTE: depend on vim-sublime-monokai plugin
 colorscheme sublimemonokai
 
-" set tab to 4 spaces
 set tabstop=4
-
-" set shift width to 4 spaces
 set shiftwidth=4
-
-" enable smart tab
 set smarttab
-
-" enable autoindent
 set smartindent
 
-" enable wrap long lines
 set wrap
-"
 set textwidth=80
 
 let &t_SI.="\e[5 q"
-
 let &t_SR.="\e[2 q"
-
 let &t_EI.="\e[1 q"
+
