@@ -1,6 +1,9 @@
 # >>> set mod to ALT button <<<
 set $mod Mod1
 
+set $browser firefox
+
+bindsym $mod+b exec $browser
 # >>> set font <<<
 font pango:DejaVu Sans Mono 12
 
