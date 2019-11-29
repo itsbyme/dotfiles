@@ -2,8 +2,8 @@ Xterm*termName:             xterm-256color
 XTerm*background:           #000000
 XTerm*foreground:           #ffffff
 XTerm*cursorColor:          #ff0000
-XTerm*VT100.geometry:       80x24
-XTerm*faceName:             Hack 
+XTerm*VT100.geometry:       94x24
+XTerm*faceName:             Hack
 XTerm*faceSize:             10
 XTerm*dynamicColors:        true
 XTerm*utf8:                 true
@@ -27,7 +27,7 @@ UXTerm*termName:            xterm-256color
 UXTerm*background:          #000000
 UXTerm*foreground:          #ffffff
 UXTerm*cursorColor:         #ffffff
-UXTerm*VT100.geometry:      80x24
+UXTerm*VT100.geometry:      94x24
 UXTerm*faceName:            Hack
 UXTerm*faceSize:            10
 UXTerm*dynamicColors:       true
