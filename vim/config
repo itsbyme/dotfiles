@@ -36,7 +36,7 @@ let g:airline_section_z = "%l/%L \ue0a1 :%c"
 let g:Powerline_symbols = 'unicode'
 
 let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#branch#empty_message = '' 
+let g:airline#extensions#branch#empty_message = '⨳' 
 " +--------------------------------+
 " |        youcompleteme           |
 " +--------------------------------+
