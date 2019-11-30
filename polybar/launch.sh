@@ -8,7 +8,9 @@ while pgrep -u $UID -x polybar >/dev/null; do
 	sleep 1;
 done
 
-# run example bar
+# run awesome (but it still look like shit) top bar
 polybar top &
+
+# run bar with workspaces info
 polybar wsbar &
 
