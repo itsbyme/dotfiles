@@ -36,7 +36,6 @@ font-0 = "Hack:size=12;3"
 font-1 = "Material Icons:size=12;3"
 modules-center = time
 modules-right = layout volume network battery
-modules-left = run
 
 
 [module/time]
@@ -51,8 +50,6 @@ label =  %time%
 type = internal/xkeyboard
 format =  <label-layout>
 
-[module/network]
-
 
 [module/volume]
 type = internal/pulseaudio
@@ -65,6 +62,16 @@ label-muted-foreground = #666
 ramp-volume-0 =
 ramp-volume-1 =
 ramp-volume-2 =
+
+
+[module/network]
+type = internal/network
+interface = wlo1
+interval = 1
+ping-interval = 10
+accumulate-stats = true
+unknown-as-up = true
+format-connected =
 
 
 [module/battery]
