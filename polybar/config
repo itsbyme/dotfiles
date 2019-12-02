@@ -53,9 +53,6 @@ format =  <label-layout>
 
 [module/network]
 
-[module/run]
-type = custom/text
-content =
 
 [module/volume]
 type = internal/pulseaudio
