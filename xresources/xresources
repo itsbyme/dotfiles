@@ -40,10 +40,20 @@ UXTerm*scrollBar:           false
 UXTerm*jumpScroll:          true
 UXTerm*multiScroll:         true
 UXTerm*toolBar:             false
-UXTerm.vt100.locale:         true
+UXTerm.vt100.locale:        true
 UXTerm.vt100.translations:  #override \n\
     Shift Ctrl <Key>C: copy-selection(CLIPBOARD) \n\
     Shift Ctrl <Key>V: insert-selection(CLIPBOARD) \n\
     Ctrl <Key>C: string(0x03) \n\
     Ctrl <Key>V: string(0x16) \n\
+
+
+URxvt.termName:             rxvt-unicode-256color
+URxvt.geometry:             94x24
+URxvt.background:           #000000
+URxvt.foreground:           #ffffff
+URxvt.cursorColor:          #ffffff
+URxvt.scrollBar:            false
+URxvt.font:                 xft:hasklig:size=10
+URxvt.saveLines:            1024
 
