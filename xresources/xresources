@@ -56,6 +56,22 @@ URxvt.loginShell:			false
 URxvt.title:				rxvt-unicode
 URxvt.termName:				rxvt-unicode-256color
 URxvt.meta8:				false
+URxvt.utmpInhibit:			false
+!URxvt.print-pipe:
+!URxvt.imLocale:
+URxvt.insecure:				false
+URxvt.modifier:				alt
+!URxvt.tripleclickwords:
+URxvt.multiClickTime:		500
+URxvt.chdir:				/home/itsbyme
+URxvt.secondaryScreen:		false
+URxvt.secondaryScroll:		false
+URxvt.hold:					false
+URxvt.url-launcher:			firefox
+URxvt.iso14755:				false
+URxvt.iso14755_52:			false
+!URxvt.transistent-for:
+!URxvt.override-redirect:
 !===========================================
 
 !=====Colors================================
@@ -95,6 +111,7 @@ URxvt.font:					xft:DejaVu Sans Mono:size=10, xft:PowerlinrSymbols:pixelsize=10,
 !URxvt.highlightTextColor:
 URxvt.intensityStyles:		true
 URxvt.lineSpace:			0
+!URxvt.skipBuiltinGlyphs:
 !URxvt.imFont:
 !===========================================
 
@@ -153,37 +170,29 @@ URxvt.urgentOnBell:			true
 URxvt.visualBell:			true
 !===========================================
 
-!=====Undefined=============================
-URxvt.utmpInhibit:			false
-URxvt.multiClickTime:		500
-!URxvt.print-pipe:
-!URxvt.skipBuiltinGlyphs:
-URxvt.pastableTabs:			false
+!=====Escape Sequences======================
+URxvt.pastableTabs:			true
 URxvt.backspacekey:			DEC
 !URxvt.deletekey:
 !URxvt.cutchars:
-!URxvt.preeditType:
-!URxvt.inputMethod:
-!URxvt.imLocale:
-!URxvt.tripleclickwords:
-URxvt.insecure:				false
-URxvt.modifier:				alt
 !URxvt.answerbackString:
-URxvt.secondaryScreen:		false
-URxvt.secondaryScroll:		false
-URxvt.hold:					false
-URxvt.chdir:				/home/itsbyme
-!URxvt.keysym.*:
+!===========================================
+
+!=====Perl==================================
 !URxvt.perl-ext-common:
 !URxvt.perl-ext:
 !URxvt.perl-eval:
 !URxvt.perl-lib:
 !URxvt.selection.pattern-idx:
 !URxvt.selection-autotransform.idx:
-URxvt.url-launcher:			firefox
-!URxvt.transistent-for:
-!URxvt.override-redirect:
-URxvt.iso14755:				false
-URxvt.iso14755_52:			false
+!===========================================
+
+!=====Keysyms===============================
+!URxvt.keysym.*:
+!===========================================
+
+!=====Undefined=============================
+!URxvt.preeditType:
+!URxvt.inputMethod:
 !===========================================
 
