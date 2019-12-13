@@ -63,10 +63,10 @@ URxvt.insecure:				false
 URxvt.modifier:				alt
 !URxvt.tripleclickwords:
 URxvt.multiClickTime:		500
-URxvt.chdir:				/home/itsbyme
-URxvt.secondaryScreen:		false
-URxvt.secondaryScroll:		false
-URxvt.hold:					false
+!URxvt.chdir:				/home/itsbyme
+URxvt.secondaryScreen:		true
+URxvt.secondaryScroll:		true
+URxvt.hold:					true
 URxvt.url-launcher:			firefox
 URxvt.iso14755:				false
 URxvt.iso14755_52:			false
@@ -109,7 +109,7 @@ URxvt.font:					xft:DejaVu Sans Mono:size=10, xft:PowerlinrSymbols:pixelsize=10,
 !URxvt.underlinecolor:
 !URxvt.highlightColor:
 !URxvt.highlightTextColor:
-URxvt.intensityStyles:		true
+URxvt.intensityStyles:		false
 URxvt.lineSpace:			0
 !URxvt.skipBuiltinGlyphs:
 !URxvt.imFont:
