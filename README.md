@@ -3,5 +3,4 @@
 * vim 
 * i3
 * polybar
-* Xresources
 
