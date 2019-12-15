@@ -1,0 +1,40 @@
+[global_config]
+  always_on_top = True
+  custom_url_handler = firefox
+  enabled_plugins = ,
+  extra_styling = False
+  homogeneous_tabbar = False
+  inactive_color_offset = 1.0
+  scroll_tabbar = True
+  suppress_multiple_term_dialog = True
+  title_font = DejaVu Sans Mono 10
+  title_hide_sizetext = True
+  title_inactive_bg_color = "#888a85"
+  title_inactive_fg_color = "#ffffff"
+  title_receive_bg_color = "#729fcf"
+  title_transmit_bg_color = "#ef2929"
+  title_use_system_font = False
+  use_custom_url_handler = True
+[keybindings]
+  close_term = <Primary><Shift>w
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    font = Hasklig 11
+    foreground_color = "#ffffff"
+    icon_bell = False
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    scroll_on_output = True
+    scrollback_lines = 2048
+    scrollbar_position = hidden
+    use_system_font = False

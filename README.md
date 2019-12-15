@@ -3,4 +3,5 @@
 * vim 
 * i3
 * polybar
+* terminator
 
