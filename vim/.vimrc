@@ -4,7 +4,7 @@
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  autocmd VimEnter * PlugInstall --sync | source '~/.vimrc'
 endif
 
 call plug#begin()
@@ -14,7 +14,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'valloric/youcompleteme'
 Plug 'ErichDonGubler/vim-sublime-monokai'
-Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " +-------------------------------------------------------------+
@@ -29,14 +28,33 @@ call plug#end()
 " |            airline             |
 " +--------------------------------+
 
+let g:airline_powerline_fonts = 1
+let g:Powerline_symbols = 'unicode'
 let g:airline_theme = 'powerlineish'
 
-let g:airline_powerline_fonts = 1 
+let g:airline_mode_map = {
+    \ 'c'      : 'COMMAND',
+    \ 'i'      : 'INSERT',
+    \ 'n'      : 'NORMAL',
+    \ 'R'      : 'REPLACE',
+    \ 'v'      : 'VISUAL',
+    \ 'V'      : 'VISUAL LINE',
+    \ ''     : 'VISUAL BLOCK',
+    \ }
+
+let g:airline_filetype_overrides = {
+    \ 'help': [ 'HELP', '%f' ],
+    \ 'nerdtree': [ get(g:, 'NERDTreeStatusline', 'NERD'), '' ],
+    \ 'vim-plug': [ 'PLUGINS', '' ],
+    \}
 let g:airline_section_z = "%l/%L \ue0a1 :%c" 
-let g:Powerline_symbols = 'unicode'
 
 let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#branch#empty_message = '' 
+let g:airline#extensions#branch#empty_message = ' ⃠⃠⃠⃠⃠⃠⃠⃠ '
+
+let g:airline#extensions#ycm#enabled = 1
+let g:airline#extensions#ycm#error_symbol = "⮾"
+let g:airline#extensions#ycm#warning_symbol = "⚠"
 " +--------------------------------+
 " |        youcompleteme           |
 " +--------------------------------+
@@ -65,6 +83,8 @@ set smartindent
 
 set wrap
 set textwidth=80
+
+set ttimeoutlen=50
 
 let &t_SI.="\e[5 q"
 let &t_SR.="\e[2 q"
