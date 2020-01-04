@@ -14,6 +14,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'valloric/youcompleteme'
 Plug 'ErichDonGubler/vim-sublime-monokai'
+" Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/nerd-fonts'
 call plug#end()
 
 " +-------------------------------------------------------------+
@@ -23,6 +25,34 @@ call plug#end()
 " +--------------------------------+
 " |            NERDTree            |
 " +--------------------------------+
+
+let g:NERDTreeAutoCenterThreshold = 5
+let g:NERDTreeChDirMode = 3
+let g:NERDTreeMouseMode = 3
+
+let g:NERDTreeNaturalSort = 1
+let g:NERDTreeSortOrder = [ '\/$', '\.h$', '\.c$', '*', '^Makefile$' ]
+
+let g:NERDTreeStatusline = '%{getcwd()}'
+let g:NERDTreeWinSize = 25
+
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeMinimalMenu = 1
+
+let g:NERDTreeDirArrowCollapsible = 'ᗑ'
+let g:NERDTreeDirArrowExpandable = 'ᗒ'
+
+let g:NERDTreeCustomOpenArgs = {
+	\ 'file': {
+		\ 'where': 't',
+		\ 'reuse': 'all',
+		\ },
+	\}
+
+imap <C-c> <Esc>:NERDTreeToggle<CR>
+map  <C-c> <Esc>:NERDTreeToggle<CR>
+
+
 
 " +--------------------------------+
 " |            airline             |
@@ -43,10 +73,11 @@ let g:airline_mode_map = {
     \ }
 
 let g:airline_filetype_overrides = {
-    \ 'help': [ 'HELP', '%f' ],
+    \ 'help':     [ 'HELP', '%f' ],
     \ 'nerdtree': [ get(g:, 'NERDTreeStatusline', 'NERD'), '' ],
     \ 'vim-plug': [ 'PLUGINS', '' ],
     \}
+
 let g:airline_section_z = "%l/%L \ue0a1 :%c" 
 
 let g:airline#extensions#branch#enabled = 1
