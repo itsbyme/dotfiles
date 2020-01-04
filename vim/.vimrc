@@ -52,8 +52,6 @@ let g:NERDTreeCustomOpenArgs = {
 imap <C-c> <Esc>:NERDTreeToggle<CR>
 map  <C-c> <Esc>:NERDTreeToggle<CR>
 
-
-
 " +--------------------------------+
 " |            airline             |
 " +--------------------------------+
@@ -73,8 +71,8 @@ let g:airline_mode_map = {
     \ }
 
 let g:airline_filetype_overrides = {
-    \ 'help':     [ 'HELP', '%f' ],
-    \ 'nerdtree': [ get(g:, 'NERDTreeStatusline', 'NERD'), '' ],
+    \ 'help':     [ 'MAN', '%f' ],
+    \ 'nerdtree': [ NERDTreeStatusline, '' ],
     \ 'vim-plug': [ 'PLUGINS', '' ],
     \}
 
