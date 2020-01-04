@@ -39,6 +39,8 @@ let g:NERDTreeWinSize = 25
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeMinimalMenu = 1
 
+let g:NERDTreeShowHidden = 1
+
 let g:NERDTreeDirArrowCollapsible = 'ᗑ'
 let g:NERDTreeDirArrowExpandable = 'ᗒ'
 
