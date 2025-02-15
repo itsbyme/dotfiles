@@ -11,11 +11,7 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-fugitive'
-Plug 'valloric/youcompleteme'
 Plug 'ErichDonGubler/vim-sublime-monokai'
-" Plug 'ryanoasis/vim-devicons'
-" Plug 'ryanoasis/nerd-fonts'
 call plug#end()
 
 " +-------------------------------------------------------------+
@@ -86,34 +82,6 @@ let g:airline#extensions#branch#empty_message = ' ⃠⃠⃠⃠⃠⃠⃠⃠ '
 let g:airline#extensions#ycm#enabled = 1
 let g:airline#extensions#ycm#error_symbol = ""
 let g:airline#extensions#ycm#warning_symbol = ""
-
-" +--------------------------------+
-" |        youcompleteme           |
-" +--------------------------------+
-
-let g:ycm_global_ycm_extra_conf = ""
-
-let g:ycm_always_populate_location_list = 1
-
-let g:ycm_min_num_of_chars_for_completion = 1
-
-let g:ycm_filetype_whitelist = { 'c': 1 }
-
-let g:ycm_error_symbol = '--'
-let g:ycm_warning_symbol = '??'
-
-let g:ycm_complete_in_comments = 1
-
-let g:ycm_max_diagnostics_to_display = 10
-
-let g:ycm_key_list_select_completion = [ '<TAB>' ]
-
-let g:ycm_key_list_previous_completion = []
-
-set signcolumn=yes
-
-imap <F5> :YcmDiags<CR>
-map <F5> :YcmDiags<CR>
 
 " +-------------------------------------------------------------+
 " |                     Basic settings                          |
